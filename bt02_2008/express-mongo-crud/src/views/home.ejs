@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRUD with MongoDB</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-4">
+  <h2>Create User</h2>
+  <form method="POST" action="/create-user" class="mb-3">
+    <input class="form-control mb-2" type="text" name="name" placeholder="Name" required/>
+    <input class="form-control mb-2" type="email" name="email" placeholder="Email" required/>
+    <input class="form-control mb-2" type="number" name="age" placeholder="Age"/>
+    <button class="btn btn-primary" type="submit">Create</button>
+  </form>
+  <a href="/users" class="btn btn-secondary">View Users</a>
+</body>
+</html>
