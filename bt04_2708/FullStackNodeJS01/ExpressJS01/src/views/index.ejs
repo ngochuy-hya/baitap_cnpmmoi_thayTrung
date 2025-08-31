@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express.js MySQL API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .api-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .api-item {
+            background: #f8f9fa;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #007bff;
+        }
+        .method {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Express.js MySQL API Server</h1>
+        <p>Server đang chạy thành công! Dưới đây là các API endpoints có sẵn:</p>
+        
+        <ul class="api-list">
+            <li class="api-item">
+                <span class="method">POST</span> /api/register - Đăng ký tài khoản (role: user/admin/moderator)
+            </li>
+            <li class="api-item">
+                <span class="method">POST</span> /api/login - Đăng nhập
+            </li>
+            <li class="api-item">
+                <span class="method">POST</span> /api/forgot-password - Quên mật khẩu
+            </li>
+            <li class="api-item">
+                <span class="method">POST</span> /api/reset-password/:token - Đặt lại mật khẩu
+            </li>
+            <li class="api-item">
+                <span class="method">GET</span> /api/test-api - Test API (Protected - All users)
+            </li>
+            <li class="api-item">
+                <span class="method">POST</span> /api/test-api - Test API (Protected - All users)
+            </li>
+            <li class="api-item">
+                <span class="method">PUT</span> /api/test-api - Test API (Protected - Admin only)
+            </li>
+            <li class="api-item">
+                <span class="method">DELETE</span> /api/test-api - Test API (Protected - Admin only)
+            </li>
+            <li class="api-item">
+                <span class="method">GET</span> /api/admin-test - Admin Panel (Protected - Admin/Moderator)
+            </li>
+        </ul>
+        
+        <p style="margin-top: 30px; text-align: center; color: #666;">
+            Sử dụng Postman hoặc frontend React để test các API
+        </p>
+    </div>
+</body>
+</html>

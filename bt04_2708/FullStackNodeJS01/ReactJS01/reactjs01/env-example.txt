@@ -1,0 +1,11 @@
+# Copy this file to .env and update the values as needed
+
+# API Configuration
+VITE_API_BASE_URL=http://localhost:3000/api
+
+# App Configuration
+VITE_APP_NAME=FullStack NodeJS App
+VITE_APP_VERSION=1.0.0
+
+# Development Configuration
+VITE_DEBUG=true

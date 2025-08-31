@@ -1,0 +1,292 @@
+/* App Layout */
+.app-layout {
+  min-height: 100vh;
+}
+
+.app-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styles */
+.app-header {
+  background: #001529;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  height: 64px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.logo h2 {
+  color: #1890ff;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main-menu {
+  border-bottom: none;
+  background: transparent;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.user-avatar-wrapper:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.user-name {
+  color: #fff;
+  font-weight: 500;
+}
+
+.role-badge {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.user-info-dropdown {
+  min-width: 200px;
+}
+
+.user-details {
+  padding: 8px 0;
+}
+
+.user-meta {
+  margin-top: 4px;
+  display: flex;
+  gap: 8px;
+}
+
+/* Footer Styles */
+.app-footer {
+  background: #f0f2f5;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 20px;
+}
+
+.footer-section h4 {
+  color: #262626;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links a {
+  color: #595959;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #1890ff;
+}
+
+.social-icon {
+  font-size: 20px;
+  color: #595959;
+  transition: color 0.2s;
+}
+
+.social-icon:hover {
+  color: #1890ff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.footer-tech-stack {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .footer-tech-stack {
+    text-align: left;
+    margin-top: 8px;
+  }
+}
+
+/* Auth Pages */
+.auth-page {
+  min-height: calc(100vh - 64px - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 24px;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-card {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-title {
+  color: #262626;
+  margin-bottom: 8px !important;
+}
+
+.auth-button {
+  height: 44px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.auth-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.forgot-password-link,
+.auth-link,
+.back-link {
+  color: #1890ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.forgot-password-link:hover,
+.auth-link:hover,
+.back-link:hover {
+  color: #40a9ff;
+}
+
+.demo-accounts {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.forgot-password-info {
+  margin-top: 24px;
+}
+
+.password-requirements {
+  margin-top: 24px;
+}
+
+/* Homepage */
+.homepage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.homepage-header {
+  margin-bottom: 24px;
+}
+
+.homepage-header h2 {
+  margin-bottom: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content {
+    padding: 0 16px;
+  }
+  
+  .header-left {
+    gap: 16px;
+  }
+  
+  .logo h2 {
+    font-size: 18px;
+  }
+  
+  .user-name {
+    display: none;
+  }
+  
+  .auth-page {
+    padding: 16px;
+  }
+  
+  .homepage {
+    padding: 16px;
+  }
+  
+  .main-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-container {
+    max-width: 100%;
+  }
+  
+  .header-right .ant-space {
+    gap: 8px !important;
+  }
+  
+  .header-right .ant-btn {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
+}
